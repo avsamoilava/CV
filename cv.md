@@ -11,7 +11,7 @@
 
 + **Location:** Minsk, Belarus
 + **Phone:** +375447072272
-+ **E-mail:** shapitunova@mail.ru
++ **E-mail:** avsamoilava@gmail.com
 + **Telegram:** @sanyaizolenta
 + **GitHub:** [avsamoilava](https://github.com/avsamoilava)
 
