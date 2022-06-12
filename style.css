@@ -5,9 +5,11 @@
           box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-  font-family: "Montserrat", sans-serif;
-  line-height: 150%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,6 +20,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  min-height: 100%;
+  font-family: "Montserrat", sans-serif;
+  line-height: 150%;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 ul {
@@ -55,6 +66,32 @@ a {
 }
 
 .header__link {
+  color: #FFFFFF;
+}
+
+.footer {
+  background: #7079c2;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__school img {
+  height: 40px;
+}
+
+.footer__github:visited {
   color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */

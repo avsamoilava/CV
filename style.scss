@@ -11,15 +11,24 @@ $text-color-light: #FFFFFF;
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Montserrat", sans-serif;
-    line-height: 150%;
+html {
+    height: 100%;
+}
 
+body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    min-height: 100%;
+
+    font-family: "Montserrat", sans-serif;
+    line-height: 150%;
 }
 
+main {
+    flex: 1 1 auto;
+}
 
 ul {
     list-style: none;
@@ -34,18 +43,20 @@ a {
     margin: 0 auto;
 }
 
-// <> =======================================================
+
+
+// <Header> =======================================================
 .header {
     background: $main-color;
     // .header__menu
 
     &__menu {
-       padding: 30px;
+        padding: 30px;
     }
 
     // .header__list
 
-    &__list { 
+    &__list {
         display: flex;
         justify-content: end;
     }
@@ -65,5 +76,45 @@ a {
     }
 }
 
+// </Header> =======================================================
 
-// </ Header> =======================================================
+
+// <Footer> =======================================================
+.footer {
+    background: $main-color;
+    color: $text-color-light;
+    padding: 20px;
+
+    // .footer__wrapper
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .footer__year
+
+    &__year {}
+
+    // .footer__school
+
+    &__school {
+        img {
+            height: 40px;
+        }
+    }
+
+    // .footer__logo
+
+    &__logo {}
+
+    // .footer__github
+
+    &__github {
+        &:visited {
+            color: $text-color-light;
+        }
+    }
+}
+
+// </Footer> =======================================================
