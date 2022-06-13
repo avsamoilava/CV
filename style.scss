@@ -72,6 +72,10 @@ a {
     &__list {
         display: flex;
         justify-content: end;
+        flex-wrap: wrap;
+        @media(max-width: 682px){
+            justify-content: center;
+        }
     }
 
     // .header__item
@@ -88,12 +92,10 @@ a {
         color: $text-color-light;
     }
 }
-
 // </Header> =======================================================
 
 
 // <Main> ==========================================================
-
 .page {
 
     // .page__wrapper
@@ -101,37 +103,15 @@ a {
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
-
-    // .page__personal-info
-
-    &__personal-info {}
-
-    // .page__professional-info
-
-    &__professional-info {}
 }
 
 .personal-info {
-    flex: 0 0 35%;
+    flex: 1 0 35%;
     padding: 30px;
     background: $secondary-color-dark;
     color: $text-color-light;
-    // .personal-info__person
-
-    &__person {}
-
-    // .personal-info__about
-
-    &__about {}
-
-    // .personal-info__contacts
-
-    &__contacts {}
-
-    // .personal-info__languages
-
-    &__languages {}
 }
 
 .person {
@@ -178,7 +158,9 @@ a {
         margin: 20px auto;
         text-align: center;
         font-size: 56px;
-       
+       @media(max-width:390px){
+        font-size: 48px;
+       }
     }
 
     // .person__profession
@@ -186,8 +168,7 @@ a {
     &__profession {
         margin-bottom: 20px;
         font-size: 28px;
-        text-align: center;
-       
+        text-align: center;      
     }
 }
 
@@ -291,30 +272,6 @@ a {
     a {
         font-size: 20px;
     }
-
-    // .professional-info__education
-
-    &__education {
-       
-    }
-
-    // .professional-info__expierence
-
-    &__experience {
-       
-    }
-
-    // .professional-info__code-example
-
-    &__code-example {
-       
-    }
-
-    // .professional-info__skills
-
-    &__skills {
-        
-    }
 }
 
 .education {
@@ -322,10 +279,6 @@ a {
     // .education__title
 
     &__title { margin-bottom: 20px;}
-
-    // .education__list
-
-    &__list {}
 
     // .education__item
 
@@ -368,10 +321,6 @@ a {
 
     &__title { margin-bottom: 20px;}
 
-    // .experience__list
-
-    &__list {}
-
     // .experience__item
 
     &__item {
@@ -390,10 +339,6 @@ a {
         }
     }
 
-    // .experience__time
-
-    &__time {}
-
     // .experience__profession
 
     &__profession {
@@ -411,8 +356,20 @@ a {
     // .code-example__code
 
     &__code {
-        
+        padding: 5px;
         background: $secondary-color-light;
+        pre {
+            margin-left: -150px;
+            @media(max-width:390px){
+                margin-left: -130px;
+            }
+        }
+        @media(max-width:604px){
+            font-size: 12px;
+        }
+        @media(max-width:390px){
+            font-size: 10px;
+        }
     }
 }
 
@@ -434,28 +391,8 @@ a {
         font-weight: 600;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // </Main> ========================================================
+
 
 // <Footer> =======================================================
 .footer {
@@ -466,13 +403,10 @@ a {
     // .footer__wrapper
     &__wrapper {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
-
-    // .footer__year
-
-    &__year {}
 
     // .footer__school
 
@@ -482,10 +416,6 @@ a {
         }
     }
 
-    // .footer__logo
-
-    &__logo {}
-
     // .footer__github
 
     &__github {
@@ -494,5 +424,4 @@ a {
         }
     }
 }
-
 // </Footer> =======================================================
