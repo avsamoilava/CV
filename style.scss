@@ -1,5 +1,5 @@
 $main-color: #7079c2;
-$secondary-color-light: #B4BEC9;
+$secondary-color-light: #a4c7cc;
 $secondary-color-dark: #159A9C;
 $text-color-dark: #002333;
 $text-color-light: #FFFFFF;
@@ -23,13 +23,18 @@ body {
     min-height: 100%;
 
     font-family: "Montserrat", sans-serif;
-    line-height: 150%;
+    line-height: 1.5;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: "Poppins";
     font-weight: 600;
+    background: $main-color;
+    color: $text-color-light;
+    padding: 5px;
 }
+
 
 main {
     flex: 1 1 auto;
@@ -40,14 +45,17 @@ ul {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none;  
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 ._container {
     max-width: 1198px;
+    padding: 0px 0px 0px 0px;
     margin: 0 auto;
 }
-
 
 
 // <Header> =======================================================
@@ -83,6 +91,371 @@ a {
 
 // </Header> =======================================================
 
+
+// <Main> ==========================================================
+
+.page {
+
+    // .page__wrapper
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .page__personal-info
+
+    &__personal-info {}
+
+    // .page__professional-info
+
+    &__professional-info {}
+}
+
+.personal-info {
+    flex: 0 0 35%;
+    padding: 30px;
+    background: $secondary-color-dark;
+    color: $text-color-light;
+    // .personal-info__person
+
+    &__person {}
+
+    // .personal-info__about
+
+    &__about {}
+
+    // .personal-info__contacts
+
+    &__contacts {}
+
+    // .personal-info__languages
+
+    &__languages {}
+}
+
+.person {
+
+    // .person__photo
+
+    &__photo {
+        position: relative;
+        z-index: 5;
+
+        max-height: 300px;
+        width: 238px;
+        margin: auto;
+       
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -2;
+
+            height: 240px;
+            width: 300px;
+
+            border-radius: 40px 0;
+            background: $main-color;
+           
+        }
+        
+        img {
+           
+            max-height: 300px;
+            width: 238px;
+            border-radius: 0 40px;
+            border: 7px double $text-color-light;
+        }
+
+    }
+
+    // .person__name
+
+    &__name {
+        margin: 20px auto;
+        text-align: center;
+        font-size: 56px;
+       
+    }
+
+    // .person__profession
+
+    &__profession {
+        margin-bottom: 20px;
+        font-size: 28px;
+        text-align: center;
+       
+    }
+}
+
+.about-me {
+
+    // .about-me__title
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    // .about-me__text
+
+    &__text {
+        margin-bottom: 30px;
+        font-style: italic;
+    }
+}
+
+.contacts {
+
+    // .contacts__title
+
+    &__title { margin-bottom: 20px;}
+
+    // .contacts__list
+
+    &__list {
+        margin-bottom: 30px;
+    }
+
+    // .contacts__item
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    // .contacts__icon
+
+    &__icon {
+        height: 30px;
+        margin-right: 20px;
+
+        &_location,  &_telegram {
+            height: 25px;
+            margin-left: 2px;
+            display: inline-block;
+            border: 1.5px solid $text-color-light;
+            border-radius: 5px;
+        }
+    }
+
+    // .contacts__link
+
+    &__link {
+        color: $text-color-light;
+        &:visited {
+            color: $text-color-light;
+        }
+    }
+}
+
+.languages {
+
+    // .languages__title
+
+    &__title { margin-bottom: 20px;}
+
+    // .languages__list
+
+    &__list {
+        margin-bottom: 30px;
+    }
+
+    // .languages__item
+
+    &__item {
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+.professional-info {
+    flex: 1 1 auto;
+    padding: 30px;
+    background: $secondary-color-light;
+    color: $text-color-dark;
+    &>div {
+        padding: 20px;
+        background: $text-color-light;
+        border-radius: 20px;
+        border: 6px double $main-color;
+        &:not(:last-child) {margin-bottom: 30px;}
+    }
+    a {
+        font-size: 20px;
+    }
+
+    // .professional-info__education
+
+    &__education {
+       
+    }
+
+    // .professional-info__expierence
+
+    &__experience {
+       
+    }
+
+    // .professional-info__code-example
+
+    &__code-example {
+       
+    }
+
+    // .professional-info__skills
+
+    &__skills {
+        
+    }
+}
+
+.education {
+
+    // .education__title
+
+    &__title { margin-bottom: 20px;}
+
+    // .education__list
+
+    &__list {}
+
+    // .education__item
+
+    &__item {
+
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+
+    // .education__link
+
+    &__link {
+        font-weight: 600;
+        color: $text-color-dark;
+        &:visited {
+            color: $text-color-dark;
+        }
+    }
+}
+
+.shatle {
+
+    // .shatle__list
+
+    &__list {
+        list-style: circle;
+    }
+
+    // .shatle__item
+
+    &__item {
+        margin-left: 40px;
+    }
+}
+
+.experience {
+
+    // .experience__title
+
+    &__title { margin-bottom: 20px;}
+
+    // .experience__list
+
+    &__list {}
+
+    // .experience__item
+
+    &__item {
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+
+    // .experience__link
+
+    &__link {
+        font-weight: 600;
+        color: $text-color-dark;
+        &:visited {
+            color: $text-color-dark;
+        }
+    }
+
+    // .experience__time
+
+    &__time {}
+
+    // .experience__profession
+
+    &__profession {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+.code-example {
+
+    // .code-example__title
+
+    &__title { margin-bottom: 20px;}
+
+    // .code-example__code
+
+    &__code {
+        
+        background: $secondary-color-light;
+    }
+}
+
+.skills {
+
+    // .skills__title
+
+    &__title { margin-bottom: 20px;}
+
+    // .skills__list
+
+    &__list {
+        list-style: circle inside;
+    }
+
+    // .skills__item
+
+    &__item {
+        font-weight: 600;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// </Main> ========================================================
 
 // <Footer> =======================================================
 .footer {
