@@ -1,12 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Samoilova Alexandra</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="_container">
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__link" href="#about">About me</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#skills">Skills</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#example">Code example</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#contacts">Contacs</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#experience">Experience</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#education">Education</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <div class="page__wrapper _container">
+            <div class="page__personal-info personal-info">
+                <div class="personal-info__person person">
+                    <div class="person__photo">
+                        <img src="./images/photo.jpg" alt="photo">
+                    </div>
+                    <h1 class="person__name">Alexandra Samoilova</h1>
+                    <div class="person__profession">Junior/Trainee Frontend Developer</div>
+                </div>
+                <div class="personal-info__about about-me" id="about">
+                    <h2 class="about-me__title">About me</h2>
+                    <p class="about-me__text">"I am 30 years old and by education I am a mechanical engineer in the
+                        railway industry. Through
+                        trial and error, I realized that I don't want to work in education, since there is nowhere to
+                        develop in my field. I have a technical mind, but I'm also quite a creative person. Therefore, I
+                        chose the path of studying Front-end."</p>
+                </div>
+                <div class="personal-info__contacts contacts" id="contacts">
+                    <h2 class="contacts__title">Contacts</h2>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <img src="./images/location.svg" alt="marker icon"
+                                class="contacts__icon contacts__icon_location">
+                            <a href="https://www.google.by/maps/place/%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.8847208,27.5233291,12z/data=!3m1!4b1!4m5!3m4!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!8m2!3d53.9006011!4d27.558972?hl=ru"
+                                class="contacts__link" target="_blank">Minsk, Belarus</a>
+                        </li>
+                        <li class="contacts__item">
+                            <img src="./images/phone.svg" alt="phone icon" class="contacts__icon">
+                            <a href="tel:+375447072272" class="contacts__link">+375447072272</a>
+                        </li>
+                        <li class="contacts__item">
+                            <img src="./images/mail.svg" alt="mail icon" class="contacts__icon">
+                            <a href="mailto:avsamoilava@gmail.com" class="contacts__link">avsamoilava@gmail.com</a>
+                        </li>
+                        <li class="contacts__item">
+                            <img src="./images/telegram.svg" alt="telegram icon"
+                                class="contacts__icon contacts__icon_telegram">
+                            <a href="https://t.me/Sanyaizolenta" class="contacts__link"
+                                target="_blank">@sanyaizolenta</a>
+                        </li>
+                        <li class="contacts__item">
+                            <img src="./images/github.svg" alt="github icon" class="contacts__icon">
+                            <a href="https://github.com/avsamoilava" class="contacts__link"
+                                target="_blank">avsamoilava</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="personal-info__languages languages">
+                    <h2 class="languages__title">Languages</h2>
+                    <ul class="languages__list">
+                        <li class="languages__item"><span>Russian</span> - native</li>
+                        <li class="languages__item"><span>English</span> - A2 (B1 in process...)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="page__professional-info professional-info">
+                <div class="professional-info__education education" id="education">
+                    <h2 class="education__title">Education</h2>
+                    <ul class="education__list">
+                        <li class="education__item">
+                            <a class="education__link"
+                                href="https://www.bsut.by/university/faculties/mf/spetsialnosti/mv">Belarusian State
+                                University of Transport</a>
+                            <div>Wagons and wagon facilities, mechanical engineer</div>
+                        </li>
+                        <li class="education__item shatle">
+                            <a class="education__link"
+                                href="https://by.linkedin.com/company/it-shatle?original_referer=https%3A%2F%2Fwww.google.com%2F">IT
+                                Shatle</a>
+                            <ul class="shatle__list">
+                                <li class="shatle__item">HTML/CSS</li>
+                                <li class="shatle__item">JavaScript</li>
+                            </ul>
+                        </li>
+                        <li class="education__item">
+                            <a class="education__link" href="https://itgid.info/course/javascript-2">ITGid by Alexandr
+                                Luschenko</a>
+                            <div>JavaScript 2.0</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="professional-info__experience experience" id="experience">
+                    <h2 class="experience__title">Experience</h2>
+                    <ul class="experience__list">
+                        <li class="experience__item">
+                            <a class="experience__link" href="https://www.moaz.by/" target="_blank">OAO "MoAZ" (MoAZ,
+                                JSC)</a>
+                            <div class="experience__time">2014-2015</div>
+                            <div class="experience__profession">supervisor</div>
+                        </li>
+                        <li class="experience__item">
+                            <a class="experience__link" href="https://www.moaz.by/" target="_blank">OAO "MoAZ" (MoAZ,
+                                JSC)</a>
+                            <div class="experience__time">2015-2017</div>
+                            <div class="experience__profession">process engineer</div>
+                        </li>
+                        <li class="experience__item">
+                            <a class="experience__link" href="https://www.dobronom.by/" target="_blank">ZAO "Dobronom"
+                                (Dobronom, CJSC)</a>
+                            <div class="experience__time">2018-2019</div>
+                            <div class="experience__profession">clerk</div>
+                        </li>
+                        <li class="experience__item">
+                            <a class="experience__link" href="https://www.dobronom.by/" target="_blank">ZAO "Dobronom"
+                                (Dobronom, CJSC)</a>
+                            <div class="experience__time">2019-2021</div>
+                            <div class="experience__profession">engineer estimator</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="professional-info__code-example code-example" id="example">
+                    <h2 class="code-example__title">Code example</h2>
+                    <div class="code-example__code">
+                        <pre>
+                        const squareOrSquareRoot = (array)=> {
+                            return array.map((item => {
+                                let rootItem = Math.sqrt(item);
+                                if (Number.isInteger(rootItem)){
+                                    return rootItem;
+                                } else return item**2;
+                            }));
+                        }
+                    </pre>
+                    </div>
+                </div>
+                <div class="professional-info__skills skills" id="skills">
+                    <h2 class="skills__title">Skills</h2>
+                    <ul class="skills__list">
+                        <li class="skills__item">HTML</li>
+                        <li class="skills__item">CSS/Sass</li>
+                        <li class="skills__item">Gulp</li>
+                        <li class="skills__item">JavaScript</li>
+                        <li class="skills__item">Git/GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper _container">
+            <span class="footer__year">© 2022</span>
+            <a class="footer__github" href="https://github.com/avsamoilava">Me on GitHub</a>
+            <a class="footer__school" href="https://rs.school/js/"><img class="footer__logo" src="./images/rss.svg"
+                    alt="rsschool logo"></a>
+        </div>
+    </footer>
 </body>
+
 </html>
